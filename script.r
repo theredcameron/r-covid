@@ -40,8 +40,9 @@ state_rate <- function(state_pop_data, data_set, state_names, min_date, max_date
 
 minimum_date <- "08-23-2020"
 maximum_date <- "09-08-2020"
-states <- c("Oklahoma", "Colorado")
+states <- c("Oklahoma", "Colorado", "New York")
 
 statesets <- state_rate(state_pop_data, fullset, states, minimum_date, maximum_date)
 
 statesets %>% ggplot(aes(x=main_date, y=per_100K, color=Province_State, label=per_100K)) + labs(x = "Date", y = "Cases per 100K") + geom_line() + geom_point() + geom_text(aes(label=per_100K), hjust = 0.5, vjust = -1)
+
