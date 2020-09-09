@@ -38,9 +38,9 @@ state_rate <- function(state_pop_data, data_set, state_names, min_date, max_date
   return(full_data_set)
 }
 
-minimum_date <- "08-23-2020"
-maximum_date <- "09-08-2020"
-states <- c("Oklahoma", "Colorado", "New York")
+minimum_date <- "08-09-2020"
+maximum_date <- "09-09-2020"
+states <- c("Oklahoma", "New York")
 
 statesets <- state_rate(state_pop_data, fullset, states, minimum_date, maximum_date)
 
