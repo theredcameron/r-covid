@@ -44,5 +44,5 @@ states <- c("Oklahoma", "New York")
 
 statesets <- state_rate(state_pop_data, fullset, states, minimum_date, maximum_date)
 
-statesets %>% ggplot(aes(x=main_date, y=per_100K, color=Province_State, label=per_100K)) + labs(x = "Date", y = "Cases per 100K") + geom_line() + geom_point() + geom_text(aes(label=per_100K), hjust = 0.5, vjust = -1)
+statesets %>% ggplot(aes(x=main_date, y=per_100K, color=Province_State, label=per_100K)) + labs(x = "Date", y = "Cases per 100K people") + geom_line() + geom_point() + geom_text(aes(label=per_100K), hjust = 0.5, vjust = -1)
 
